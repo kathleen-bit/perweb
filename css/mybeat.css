@@ -33,6 +33,7 @@ h1 {
     max-width: 800px;
     margin: 20px auto;
     text-align: justify;
+    line-height: 1.6;
 }
 
 .player-container {
