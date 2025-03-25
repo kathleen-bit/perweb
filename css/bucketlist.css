@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #242331;
+    line-height: 1.6;
+}
+
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* BUCKET LIST SECTION */
+.bucket-list {
+    background-color: #181827;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.bucket-list h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddca7d;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.bucket-list p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddca7d;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* BUCKET LIST CARDS */
+.bucket-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.bucket-card {
+    background-color: #533e2d;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* CARD ICON */
+.card-icon {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    
+}
+
+/* CARD TITLE */
+.bucket-card h3 {
+    color: #ddca7d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* CARD DESCRIPTION */
+.bucket-card p {
+    color: #f4f1de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* HOVER EFFECT: BOUNCE */
+.bucket-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .bucket-list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bucket-card {
+        width: 90%;
+    }
+}

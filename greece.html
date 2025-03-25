@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greece</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/dreamplaces.css">
+    <link rel="stylesheet" href="/css/dreamplacesNav.css">
+
+    <!-- Boxicons or Font Awesome (Choose One) -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <!-- For Font Awesome Uncomment Below -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+    <style>
+        .greece-text {
+            background-color: #f5f5f5;
+            border-left: 5px solid #a27035;
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .greece-text h3 {
+            color: #533e2d;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .greece-text p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .pinterest-item {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pinterest-item:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 style="padding-top: 20px;">Athens</h1>
+        <h2>Greece</h2>
+
+        <nav class="nav">
+            <a href="index.html" target="_blank" >Home</a>
+            <a href="bio.html" target="_blank">Biography</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="mybeat.html" target="_blank">My Beat</a>
+            <a href="myfilm.html" target="_blank">Films</a>
+            <a href="resume.html" target="_blank">Resume</a>
+            <a href="skills.html" target="_blank">Skills</a>
+            <a href="mainDreamPlaces.html" class="active">Dream Places</a>
+            <a href="bucketlist.html" target="_blank">Bucket List</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="places">
+            <!-- MULTIPLE MAPS SECTION -->
+            <div class="dream-map">
+                <a href="swit.html" class="link">
+                    <img src="/images/s.png" alt="Switzerland Map" class="map-item">
+                </a>
+                <a href="uk.html" class="link">
+                    <img src="/images/uk.png" alt="UK Map" class="map-item">
+                </a>
+                <a href="france.html" class="link">
+                    <img src="/images/f.png" alt="France Map" class="map-item">
+                </a>
+                <a href="greece.html" class="link">
+                    <img src="/images/g.png" alt="Greece Map" class="map-item">
+                </a>
+                <a href="japan.html" class="link">
+                    <img src="/images/j.png" alt="Japan Map" class="map-item">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main">
+        <!-- GREECE SECTION -->
+        <section id="greece" class="country-container">
+            <div class="country-content">
+                <!-- LEFT SIDE: DESCRIPTION -->
+                <div class="greece-text">
+                    <h3>Why Athens?</h3>
+                    <p>
+                        Athens, the cradle of Western civilization, offers a mesmerizing blend of ancient history and vibrant modern culture. It's home to iconic landmarks like the Acropolis, Parthenon, and the charming Plaka neighborhood.
+                    </p>
+                    <br>
+                    <h3>How to Get There</h3>
+                    <p>
+                        <i class='bx bxs-plane-alt icon'></i> <strong>By Air:</strong> Fly to Athens International Airport (ATH), which serves numerous international flights.<br><br>
+                        <i class='bx bx-train icon'></i> <strong>By Train:</strong> Trains connect Athens with Thessaloniki and other Greek cities.<br><br>
+                        <i class='bx bx-bus icon'></i> <strong>Public Transport:</strong> The Athens Metro and buses offer easy access around the city.
+                    </p>
+                    <br>
+                    <h3>Other Places to Visit</h3>
+                    <p>
+                        <i class='bx bx-landscape icon'></i> <strong>Acropolis & Parthenon:</strong> Ancient landmarks offering breathtaking views.<br><br>
+                        <i class='bx bxs-building-house icon'></i> <strong>Plaka Neighborhood:</strong> Quaint streets filled with local charm.<br><br>
+                        <i class='bx bxs-institution icon'></i> <strong>National Archaeological Museum:</strong> Home to Greece’s greatest treasures.<br><br>
+                        <i class='bx bx-water icon'></i> <strong>Temple of Poseidon:</strong> Overlooking the Aegean Sea, offering stunning sunsets.
+                    </p>
+                </div>
+
+                <!-- RIGHT SIDE: IMAGES IN PINTEREST STYLE -->
+                <div class="gallery">
+                    <img src="/images/greece1.jpg" title="View of Athens" alt="Wengen" class="pinterest-item" target="output">
+                    <img src="/images/greece2.png" title="The Acropolis" alt="Wengen" class="pinterest-item" target="output">
+                    <img src="/images/greece3.jpg" title="Plaka Neighbourhoods" alt="Interlaken" class="pinterest-item" target="output">
+                    <img src="/images/greece4.jpg" title="View on the Acropolis" alt="Interlaken" class="pinterest-item" target="output">
+                    <img src="/images/greece5.jpg" title="Temple of Poseidon" alt="Interlaken" class="pinterest-item" target="output">
+                    <img src="/images/greece7.jpg" title="Odeon of Herodes Atticus" alt="Interlaken" class="pinterest-item" target="output">
+                    <img src="/images/greece6.jpg" title="National Archaeological Museum" alt="Interlaken" class="pinterest-item" target="output">
+                    <img src="/images/greece8.webp" title="Street of Athens" alt="Interlaken" class="pinterest-item" target="output">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+

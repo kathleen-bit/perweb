@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242331;
+    line-height: 1.6;
+}
+
+/* MAIN CONTAINER */
+.main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.map-item {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.map-item:hover {
+    transform: scale(1.1);
+}
+
+/* SWITZERLAND SECTION */
+.country-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FLEXIBLE CONTENT: TEXT + GALLERY */
+.country-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE - DESCRIPTION */
+.switzerland-text {
+    width: 35%;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 4px solid #a27035;
+}
+
+.japan-text {
+    width: 35%;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 4px solid #a27035;
+}
+
+.uk-text {
+    width: 35%;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 4px solid #a27035;
+}
+
+.france-text {
+    width: 35%;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 4px solid #a27035;
+}
+
+.greece-text {
+    width: 35%;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 4px solid #a27035;
+}
+
+
+/* RIGHT SIDE - MASONRY GALLERY */
+.gallery {
+    width: 60%;
+    column-count: 2; /* Two columns for larger screens */
+    column-gap: 15px;
+}
+
+/* LARGER PICTURE STYLE - MASONRY ITEM */
+.pinterest-item {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.pinterest-item:hover {
+    transform: scale(1.05);
+}
+
+/* ENSURE IMAGES SCALE PROPERLY */
+.pinterest-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .switzerland-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .switzerland-text,
+    .switzerland-gallery {
+        width: 100%;
+    }
+
+    .switzerland-gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .switzerland-gallery {
+        column-count: 1; /* Single column for smaller screens */
+    }
+
+    .pinterest-item {
+        max-height: 250px;
+    }
+}

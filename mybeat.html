@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat</title>
+    <link rel="stylesheet" href="/css/mybeat.css">
+    <link rel="stylesheet" href="/css/nav.css">
+   
+</head>
+
+<body>
+    <h1 style="padding: 30px;">My Beat</h1>
+    
+    <nav class="nav">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="bio.html" target="_blank">Biography</a>
+        <a href="gallery.html" >Gallery</a>
+        <a href="mybeat.html" class="active">My Beat</a>
+        <a href="myfilm.html" target="_blank">Films</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="mainDreamPlaces.html">Dream Places</a>
+        <a href="bucketlist.html" target="_blank">Bucket List</a>
+    </nav>
+
+    <p class="desc1">Music is more than just entertainment—it's an expression of emotions, a source of creativity, and a
+        reflection of personal growth. Each song in my collection holds meaning, whether it’s an inspiring melody that fuels my creativity, a calming tune that brings clarity,
+        or an energetic beat that keeps me motivated. From timeless classics to modern favorites, my playlist is a curated mix of sounds that resonate with different moments in my life.
+        Feel free to explore and discover the music that inspires me. Here's my Top 3 in Different Genre:</p>
+
+    <!-- POP Section -->
+    <div class="pop">
+        <h2 class="poptitle">POP Music</h2>
+        <div class="player-container">
+            <div class="player">
+                <img class="album-cover" src="/images/album1.jpg" alt="Album Cover">
+                <h2 class="title">All You Had To Do Was Stay</h2>
+                <p class="artist">Taylor Swift</p>
+                <div class="audio-player" data-src="/music/pop1.mp3" data-start="45"></div>
+                <p class="desc">A heartbreak anthem from Taylor Swift’s '1989' that captures the feeling of regret after a relationship falls apart.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album2.png" alt="Album Cover">
+                <h2 class="title">Blinding Lights</h2>
+                <p class="artist">The Weeknd</p>
+                <div class="audio-player" data-src="/music/pop2.mp3" data-start="30"></div>
+                <p class="desc">An 80s-inspired synthwave hit by The Weeknd, taking listeners on an emotional rollercoaster of longing and desire.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album3.png" alt="Album Cover">
+                <h2 class="title">Just Dance</h2>
+                <p class="artist">Lady Gaga</p>
+                <div class="audio-player" data-src="/music/pop3.mp3" data-start="40"></div>
+                <p class="desc">A timeless dance-pop track by Lady Gaga that ignites the dance floor with its infectious energy.</p>
+                <br
+            </div>
+        </div>
+    </div>
+
+    <!-- R&B Section -->
+    <div class="rnb">
+        <h2 class="poptitle">R&B Music</h2>
+        <div class="player-container">
+            <div class="player">
+                <img class="album-cover" src="/images/album4.jpg" alt="Album Cover">
+                <h2 class="title">Mad</h2>
+                <p class="artist">Ne-Yo</p>
+                <div class="audio-player" data-src="/music/rnb1.mp3" data-start="50"></div>
+                <p class="desc">Ne-Yo’s emotional ballad exploring feelings of confusion and frustration in a fading relationship.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album5.jpg" alt="Album Cover">
+                <h2 class="title">Mirrors</h2>
+                <p class="artist">Justin Timberlake</p>
+                <div class="audio-player" data-src="/music/rnb2.mp3" data-start="60"></div>
+                <p class="desc">Justin Timberlake’s reflective piece about finding oneself through love, with soulful vocals and intricate production.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album6.jpg" alt="Album Cover">
+                <h2 class="title">Snooze</h2>
+                <p class="artist">SZA</p>
+                <div class="audio-player" data-src="/music/rnb3.mp3" data-start="35"></div>
+                <p class="desc">A smooth and sultry track from SZA’s album that captures the feeling of wanting to hold onto a perfect moment.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rap Section -->
+    <div class="rap">
+        <h2 class="poptitle">Rap Music</h2>
+        <div class="player-container">
+            <div class="player">
+                <img class="album-cover" src="/images/album7.jpg" alt="Album Cover">
+                <h2 class="title">California Love</h2>
+                <p class="artist">2Pac · Roger Troutman · Dr. Dre</p>
+                <div class="audio-player" data-src="/music/rap1.mp3" data-start="55"></div>
+                <p class="desc">A West Coast classic from 2Pac and Dr. Dre that celebrates the California lifestyle with smooth beats and powerful verses.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album8.jpg" alt="Album Cover">
+                <h2 class="title">Fall</h2>
+                <p class="artist">Eminem</p>
+                <div class="audio-player" data-src="/music/rap2.mp3" data-start="50"></div>
+                <p class="desc">Eminem’s intense track addressing criticism and his personal struggles, filled with raw emotion and sharp lyricism.</p>
+            </div>
+
+            <div class="player">
+                <img class="album-cover" src="/images/album9.jpg" alt="Album Cover">
+                <h2 class="title">Money Trees</h2>
+                <p class="artist">Kendrick Lamar</p>
+                <div class="audio-player" data-src="/music/rap3.mp3" data-start="65"></div>
+                <p class="desc">A standout from Kendrick Lamar’s 'good kid, m.A.A.d city,' exploring the duality of ambition and loyalty.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('.audio-player').forEach(player => {
+            const audioSrc = player.getAttribute('data-src');
+            const startTime = parseFloat(player.getAttribute('data-start')) || 0;
+
+            // Create audio element
+            const audio = new Audio(audioSrc);
+
+            // custom controls
+            player.innerHTML = `
+                <button class="play-btn">▶️</button>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <span class="time">0:00 / 0:10</span>
+            `;
+
+            const playBtn = player.querySelector('.play-btn');
+            const progressBar = player.querySelector('.progress-bar');
+            const progress = player.querySelector('.progress');
+            const timeDisplay = player.querySelector('.time');
+
+            let isPlaying = false;
+
+            // Play/pause functionality
+            playBtn.addEventListener('click', () => {
+                if (isPlaying) {
+                    audio.pause();
+                    playBtn.innerHTML = '▶️';
+                } else {
+                    audio.currentTime = startTime;
+                    audio.play();
+                    playBtn.innerHTML = '⏸️';
+                    setTimeout(() => {
+                        audio.pause();
+                        playBtn.innerHTML = '▶️';
+                    }, 10000);
+                }
+                isPlaying = !isPlaying;
+            });
+
+            // Update progress and time
+            audio.addEventListener('timeupdate', () => {
+                const elapsed = Math.floor(audio.currentTime - startTime);
+                const progressPercent = (elapsed / 10) * 100;
+                progress.style.width = `${progressPercent}%`;
+                timeDisplay.innerText = `${formatTime(elapsed)} / 0:10`;
+
+                // Stop after 10 seconds
+                if (elapsed >= 10) {
+                    audio.pause();
+                    audio.currentTime = startTime;
+                    playBtn.innerHTML = '▶️';
+                    isPlaying = false;
+                }
+            });
+
+            // Format time
+            function formatTime(seconds) {
+                const min = Math.floor(seconds / 60);
+                const sec = seconds % 60;
+                return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+            }
+        });
+    </script>
+</body>
+
+</html>

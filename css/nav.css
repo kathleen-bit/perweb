@@ -1,0 +1,45 @@
+/* NAVIGATION BAR STYLING */
+header {
+    background-color: #242331;
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #ddca7d;
+}
+
+.nav {
+    background-color: #2e2d3a;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddca7d;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 15px;
+}
+
+.nav a:hover {
+    background-color: #a27035;
+    color: #242331;
+    transform: scale(1.1);
+}
+
+.nav a.active {
+    background-color: #b88b4a;
+    color: #181827;
+}

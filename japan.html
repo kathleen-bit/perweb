@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/dreamplaces.css">
+    <link rel="stylesheet" href="/css/dreamplacesNav.css">
+
+    <!-- Boxicons or Font Awesome (Choose One) -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <!-- For Font Awesome Uncomment Below -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+    <style>
+        .japan-text {
+            background-color: #f5f5f5;
+            border-left: 5px solid #a27035;
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .japan-text h3 {
+            color: #533e2d;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .japan-text p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .pinterest-item {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pinterest-item:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 style="padding-top: 20px;">Kyoto</h1>
+        <h2>Japan</h2>
+
+        <nav class="nav">
+            <a href="index.html" target="_blank" >Home</a>
+            <a href="bio.html" target="_blank">Biography</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="mybeat.html" target="_blank">My Beat</a>
+            <a href="myfilm.html" target="_blank">Films</a>
+            <a href="resume.html" target="_blank">Resume</a>
+            <a href="skills.html" target="_blank">Skills</a>
+            <a href="mainDreamPlaces.html" class="active">Dream Places</a>
+            <a href="bucketlist.html" target="_blank">Bucket List</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="places">
+            <!-- MULTIPLE MAPS SECTION -->
+            <div class="dream-map">
+                <a href="swit.html" class="link">
+                    <img src="/images/s.png" alt="Switzerland Map" class="map-item">
+                </a>
+                <a href="uk.html" class="link">
+                    <img src="/images/uk.png" alt="UK Map" class="map-item">
+                </a>
+                <a href="france.html" class="link">
+                    <img src="/images/f.png" alt="France Map" class="map-item">
+                </a>
+                <a href="greece.html" class="link">
+                    <img src="/images/g.png" alt="Greece Map" class="map-item">
+                </a>
+                <a href="japan.html" class="link">
+                    <img src="/images/j.png" alt="Japan Map" class="map-item">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main">
+        <!-- JAPAN SECTION -->
+        <section id="japan" class="country-container">
+            <div class="country-content">
+
+                <!-- LEFT SIDE: DESCRIPTION -->
+                <div class="japan-text">
+                    <h3>Why Kyoto?</h3>
+                    <p>
+                        Kyoto, Japan’s cultural heart, is known for its stunning temples, tranquil gardens, and preserved heritage. Walking through Kyoto feels like stepping back in time, making it a dream destination for history lovers.
+                    </p>
+                    <br>
+                    <h3>How to Get There</h3>
+                    <p>
+                        <i class='bx bxs-plane-alt icon'></i> <strong>By Air:</strong> Fly to Kansai International Airport (KIX) and take a train or bus to Kyoto.<br><br>
+                        <i class='bx bx-train icon'></i> <strong>By Train:</strong> The Shinkansen bullet train connects Kyoto to Tokyo and Osaka.<br><br>
+                        <i class='bx bx-bus icon'></i> <strong>Public Transport:</strong> Kyoto's bus and subway system offers easy access to popular tourist sites.
+                    </p>
+                    <br>
+                    <h3>Other Places to Visit</h3>
+                    <p>
+                        <i class='bx bx-landscape icon'></i> <strong>Fushimi Inari Shrine:</strong> Famous for its thousands of vermilion torii gates.<br><br>
+                        <i class='bx bxs-tree icon'></i> <strong>Arashiyama Bamboo Grove:</strong> A serene bamboo forest with enchanting beauty.<br><br>
+                        <i class='bx bx-church icon'></i> <strong>Kiyomizu-dera:</strong> A UNESCO-listed Buddhist temple with breathtaking views.<br><br>
+                        <i class='bx bxs-institution icon'></i> <strong>Gion District:</strong> A historic area where you can spot geishas.
+                    </p>
+                </div>
+
+                <!-- RIGHT SIDE: IMAGES IN PINTEREST STYLE -->
+                <div class="gallery">
+                    <img src="/images/japan2.jpg" alt="Kyoto" class="pinterest-item" target="output" title="Street of Kiyomizu-dera">
+                    <img src="/images/japan3.jpg" alt="kyoto" class="pinterest-item" target="output" title="Higashiyama Jisho-ji, Buddhist Temple">
+                    <img src="/images/japan4.webp" alt="Kyoto" class="pinterest-item" target="output" title="View of Kiyomizu-dera">
+                    <img src="/images/japan6.jpg" alt="Kyoto" class="pinterest-item" target="output" title="Fushimi Inari Shrine">
+
+                    <img src="/images/japan8.webp" alt="Kyoto" class="pinterest-item" target="output" title="Kyoto Train">
+                    <img src="/images/japan5.jpg" alt="Kyoto" class="pinterest-item" target="output" title="Arashiyama Bamboo Grove">
+                    <img src="/images/japan1.jpg" alt="Kyoto" class="pinterest-item" target="output" title="Kiyomizu-dera, Buddhist Temple">
+                    <img src="/images/japan9.webp" alt="Kyoto" class="pinterest-item" target="output" title="Arashiyama">
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+

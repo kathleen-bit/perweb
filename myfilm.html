@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Film</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #242331;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 800;
+            font-size: 85px;
+            color: #ddca7d;
+            margin-top: 50px;
+        }
+
+        .desc {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            color: #f4f1de;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        .category {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            color: #ddca7d;
+            padding-top: 50px;
+            text-transform: uppercase;
+        }
+
+        .filmContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: start;
+            margin-top: 40px;
+            margin-bottom: 70px;
+            padding: 0 20px;
+        }
+
+        video {
+            width: 100%;
+            height: 225px;
+            margin: 10px 0;
+        }
+
+        .tvTitle, .movieTitle {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ddca7d;
+            margin-top: 10px;
+        }
+
+        .tvDesc, .movieDesc, .movieDesc2, .tvDesc2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: #f4f1de;
+            max-width: 400px;
+            margin: 10px auto;
+            text-align: justify;
+        }
+
+        .movie1, .tv1 {
+            border: 2px solid #ddca7d;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #2e2d3a;
+            transition: transform 0.2s ease-in-out;
+            height: 450px;
+        }
+
+        .movie1:hover, .tv1:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="padding: 30px;">My Kind of Films</h1>
+        <nav class="nav">
+            <a href="index.html" target="_blank" >Home</a>
+            <a href="bio.html" target="_blank">Biography</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="mybeat.html" target="_blank">My Beat</a>
+            <a href="myfilm.html" class="active">Films</a>
+            <a href="resume.html" target="_blank">Resume</a>
+            <a href="skills.html" target="_blank">Skills</a>
+            <a href="mainDreamPlaces.html">Dream Places</a>
+            <a href="bucketlist.html" target="_blank">Bucket List</a>
+        </nav>
+    </header>
+
+    <p class="desc">Hello and thanks for stopping by! This is where I share my all-time favorite TV shows and movies that have left a lasting impression on me. 
+        Whether you're a binge-watcher looking for your next series to dive into or a movie buff searching for a weekend flick, you're in the right place!
+
+        Explore my personal picks categorized into TV Shows and Movies, with video clips to give you a taste of why I love them. 
+        Enjoy browsing through and maybe you'll discover a new favorite along the way!</p>
+
+    <div class="tv-shows">
+        <h2 class="category">TV Shows</h2>
+        <p>Here are some of my favorite TV shows!</p>
+
+        <div class="filmContainer">
+            <div class="tv1">
+                <h2 class="tvTitle">Modern Family</h2>
+                <p class="tvDesc">A hilarious mockumentary that follows the lives of the Pritchett-Dunphy-Tucker family, offering a funny and heartfelt look at modern-day family dynamics.</p>
+
+                <video frameborder="0" allowfullscreen controls>
+                    <source src="video/tv1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="tvDesc2">Main Leads: Ed O'Neill, Sofia Vergara, Julie Bowen, Ty Burrell | Year: 2009 | Genre: Comedy, Family, Romance</p>
+            </div>
+
+            <div class="tv1">
+                <h2 class="tvTitle">Running Man (Korea)</h2>
+                <p class="tvDesc">A South Korean variety show where contestants complete missions in a race to win, packed with humor, action, and surprising twists.</p>
+                <video frameborder="0" allowfullscreen controls>
+                    <source src="video/tv2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="tvDesc2">Main Leads: Yoo Jae-suk, Kim Jong-kook, Ha Dong-hoon, Song Ji-hyo | Year: 2010 | Genre: Variety, Comedy, Reality</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="movies">
+        <h2 class="category">Movies</h2>
+        <p>Here are some of my favorite movies!</p>
+
+        <div class="filmContainer">
+            <div class="movie1">
+                <h2 class="movieTitle">Case Closed: The Phantom of Baker Street</h2>
+                <p class="movieDesc">Conan is transported to a virtual reality game set in 19th-century London where he must solve a mystery to save the lives of the players.</p>
+
+                <video frameborder="0" allowfullscreen controls>
+                    <source src="video/movie1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="movieDesc2">Main Leads: Minami Takayama, Wakana Yamazaki | Year: 2002 | Genre: Animation, Mystery, Adventure</p>
+            </div>
+
+            <div class="movie1">
+                <h2 class="movieTitle">Jumanji: Welcome to the Jungle</h2>
+                <p class="movieDesc">Four teenagers are sucked into a magical video game, and the only way they can escape is to work together to finish the game.</p>
+
+                <video frameborder="0" allowfullscreen controls>
+                    <source src="video/movie2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="movieDesc2">Main Leads: Dwayne Johnson, Kevin Hart, Karen Gillan, Jack Black | Year: 2017 | Genre: Action, Comedy, Adventure</p>
+            </div>
+
+            <div class="movie1">
+                <h2 class="movieTitle">The Conjuring (2013)</h2>
+                <p class="movieDesc">Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.</p>
+                
+                <video frameborder="0" allowfullscreen controls>
+                    <source src="video/movie3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p class="movieDesc2">Main Leads: Vera Farmiga, Patrick Wilson, Ron Livingston, Lili Taylor | Year: 2013 | Genre: Horror, Thriller</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

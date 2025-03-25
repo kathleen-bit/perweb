@@ -1,0 +1,150 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242331;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 85px;
+    color: #ddca7d;
+    margin-top: 50px;
+}
+
+.poptitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #ddca7d;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.desc1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #f4f1de;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.player {
+    text-align: center;
+    max-width: 400px;
+    background-color: #2e2d3a;
+    padding: 20px;
+    border: 2px solid #ddca7d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.player:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.album-cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 19px;
+    color: #f4f1de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
+}
+
+.artist {
+    font-size: 15px;
+    color: #ddca7d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    background-color: #2e2d3a;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #ddca7d;
+    color: #242331;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.play-btn:hover {
+    background-color: #f4f1de;
+    color: #2e2d3a;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 6px;
+    background-color: #f4f1de;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #ddca7d;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+.time {
+    font-size: 14px;
+    color: #f4f1de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 60px;
+    text-align: center;
+}
+
+.desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #f4f1de;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    transition: transform 0.3s ease-in-out;
+}
+
+.desc:hover {
+    transform: translateY(-5px);
+}

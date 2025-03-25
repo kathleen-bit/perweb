@@ -1,0 +1,49 @@
+/* DREAM PLACES SECTION */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.desc {
+    font-size: 18px;
+    color:#ddca7d;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.places {
+    border-radius: 10px;
+    
+}
+
+.map-item {
+    width: 200px; /* Rectangle width */
+    height: 110px; /* Rectangle height */
+    margin: 5px;
+    border: 2px solid #ddca7d;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.map-item image{
+    cursor: default;
+}
+
+
+.map-item a:hover {
+    transform: scale(1.1);
+    
+}
+
+.map-item .link{
+    cursor: pointer;
+
+}
+
+/* MAP CONTAINER */
+.dream-map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switzerland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/dreamplaces.css">
+    <link rel="stylesheet" href="/css/dreamplacesNav.css">
+
+    <!-- Boxicons or Font Awesome (Choose One) -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <!-- For Font Awesome Uncomment Below -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+    <style>
+        /* CUSTOM STYLES FOR SWITZERLAND PAGE */
+        .switzerland-text {
+            background-color: #f5f5f5;
+            border-left: 5px solid #ddca7d;
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .switzerland-text h3 {
+            color: #533e2d;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .switzerland-text p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .pinterest-item {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pinterest-item:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 style="padding-top: 20px;">Wengen & Interlaken</h1>
+        <h2>Switzerland</h2>
+
+        <nav class="nav">
+            <a href="index.html" target="_blank" >Home</a>
+            <a href="bio.html" target="_blank">Biography</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="mybeat.html" target="_blank">My Beat</a>
+            <a href="myfilm.html" target="_blank">Films</a>
+            <a href="resume.html" target="_blank">Resume</a>
+            <a href="skills.html" target="_blank">Skills</a>
+            <a href="mainDreamPlaces.html" class="active">Dream Places</a>
+            <a href="bucketlist.html" target="_blank">Bucket List</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="places">
+            <!-- MULTIPLE MAPS SECTION -->
+            <div class="dream-map">
+                <a href="swit.html" class="link">
+                    <img src="/images/s.png" alt="Switzerland Map" class="map-item">
+                </a>
+                <a href="uk.html" class="link">
+                    <img src="/images/uk.png" alt="UK Map" class="map-item">
+                </a>
+                <a href="france.html" class="link">
+                    <img src="/images/f.png" alt="France Map" class="map-item">
+                </a>
+                <a href="greece.html" class="link">
+                    <img src="/images/g.png" alt="Greece Map" class="map-item">
+                </a>
+                <a href="japan.html" class="link">
+                    <img src="/images/j.png" alt="Japan Map" class="map-item">
+                </a>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main">
+        <!-- SWITZERLAND SECTION -->
+        <section id="switzerland" class="country-container">
+            <div class="country-content">
+                <!-- LEFT SIDE: DESCRIPTION -->
+                <div class="switzerland-text">
+                    <h3>Why Wengen & Interlaken?</h3>
+                    <p>
+                        Wengen is a charming car-free village surrounded by the Swiss Alps, offering breathtaking views, cozy chalets, and hiking trails. Interlaken, nestled between Lake Thun and Lake Brienz, is famous for its adventure sports and scenic boat rides.
+                    </p>
+                    <br>
+
+                    <h3>How to Get There</h3>
+                    <p>
+                        <i class='bx bxs-plane-alt icon'></i> <strong>By Air:</strong> Fly to Zurich or Geneva, then take a scenic train to Interlaken.<br><br>
+                        <i class='bx bx-train icon'></i> <strong>By Train:</strong> From Interlaken, take a direct train to Wengen through Lauterbrunnen.
+                    </p>
+                    <br>
+
+                    <h3>Other Places to Visit</h3>
+                    <p>
+                        <i class='bx bxs-landscape icon'></i> <strong>Jungfraujoch:</strong> The “Top of Europe,” with panoramic views.<br><br>
+                        <i class='bx bxs-tree icon'></i> <strong>Grindelwald:</strong> Perfect for hiking and exploring the Bernese Alps.<br><br>
+                        <i class='bx bx-water icon'></i> <strong>Lake Thun & Lake Brienz:</strong> Enjoy boat cruises with stunning mountain views.
+                    </p>
+
+                </div>
+
+                <!-- RIGHT SIDE: IMAGES IN PINTEREST STYLE -->
+                <div class="gallery">
+                    <img src="/images/swit6.jpg" target="_blank" alt="Wengen" class="pinterest-item" title="Lake Thun">
+                    <img src="/images/swit2.jpg" target="_blank" alt="Wengen" class="pinterest-item" title="Little Town of Wengen">
+                    <img src="/images/swit3.webp" target="_blank" alt="Interlaken" class="pinterest-item" title="Lake Brienz">
+                    <img src="/images/swit4.jpg" target="_blank" alt="Interlaken" class="pinterest-item" title="Harder Kulm">
+                    <img src="/images/swit1.jpg" target="_blank" alt="Wengen" class="pinterest-item" title="Alpine Flowers of the Swiss Alps">
+                    <img src="/images/swit5.jpg" target="_blank" alt="Interlaken" class="pinterest-item" title="Grindelwald">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

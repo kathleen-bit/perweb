@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#242331;
+}
+
+.body .title {
+    padding-top: 50px;
+    text-align: center;         
+}
+
+p{
+    color: aliceblue;
+}
+
+
+.main{
+    padding: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+    color: aliceblue;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #ddca7d;
+}
+
+sup{
+    font-size: 10px;
+    color: beige;
+}
+
+.bio-pics{
+    display:inline-block;
+    margin:5px;
+    width:200px;
+}
+
+.bio-pics img{
+    width:100%;
+    height:auto;
+    
+}
+
+.top{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
+
+.top a{
+    color: #b88b4a;
+    text-decoration: none;
+}
+
+a:hover{
+    color: beige;
+}

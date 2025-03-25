@@ -1,0 +1,21 @@
+#242331
+#533e2d
+#a27035
+#b88b4a
+#ddca7d
+
+#181827;
+
+Font Family
+Serif
+Palatino
+Cambria
+Noto Serif
+
+Font Family
+Sans-Serif
+Helvetica
+Tahoma
+Canva Sans
+
+
